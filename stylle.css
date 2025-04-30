@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #f0f4f9;
+  overflow: hidden; /* Prevent scroll bar */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Vertically center content */
+  height: 100vh; /* Full screen height */
+}
+
+.signin {
+  width: 70vw;
+}
+
+.signin-content {
+  background-color: white;
+  padding: 40px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.logo img {
+  width: 45px;
+  height: auto;
+}
+
+.signin-text-form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.signin-left h1 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.signin-left p {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.signin-right-form input {
+  width: 90%;
+  padding: 17px 15px;
+  border-radius: 7px;
+  border: 1px solid gray;
+  font-size: 1rem;
+}
+
+.signin-right-form a {
+  text-decoration: none;
+  color: #0b57d0;
+  padding: 3px;
+}
+
+.signin-right-form a:hover {
+  background-color: #eff5ff;
+  border-radius: 3px;
+}
+
+.signin-right-form,
+.signin-guest {
+  padding-bottom: 40px;
+}
+
+.signin-guest p,
+.signin-right-form p {
+  margin: 0;
+}
+
+.signin-right-form p {
+  margin-top: 5px;
+}
+
+.signin-guest a {
+  text-decoration: none;
+  color: #0b57d0;
+}
+
+.signin-guest a:hover {
+  text-decoration: underline;
+}
+
+.signin-buttons {
+  padding-top: 40px;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.signin-buttons button {
+  border-radius: 20px;
+  font-size: 0.95rem;
+  padding: 10px 20px;
+}
+
+.signin-buttons button:nth-child(1) {
+  background-color: transparent;
+  border: none;
+  color: #0b57d0;
+  font-weight: bold;
+}
+
+.signin-buttons button:nth-child(1):hover {
+  background-color: #eff5ff;
+}
+
+.signin-buttons button:nth-child(2) {
+  background-color: #0b57d0;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.signin-buttons button:nth-child(2):hover {
+  background-color: #003893;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: hsl(213, 5%, 39%);
+  margin-top: 20px;
+  width: 70vw;
+}
+
+.language-select select {
+  border: none;
+  background: transparent;
+  color: #5f6368;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.link-items a {
+  margin-left: 16px;
+  color: #5f6368;
+  text-decoration: none;
+}
+
+.link-items a:hover {
+  text-decoration: underline;
+}
